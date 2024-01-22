@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.10.1)
+project(smart_test)
+add_subdirectory(../ testlibs)
+include_directories(../../)
+set(CMAKE_CURRENT_SOURCE_DIR "../../")
+set(SRC general_tests.cpp ../../Composite.cpp)
+add_executable(${PROJECT_NAME} ${SRC})
+target_link_libraries(${PROJECT_NAME} gtest gmock gmock_main)

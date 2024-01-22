@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/Source Codes/codePracticing/Composite_DP/Smart-Pointers-usage-in-polymorphism/tests/smarttests/build/_deps/gtestlib-subbuild/CMakeFiles/gtestlib-populate"
+		},
+		{
+			"file" : "D:/Source Codes/codePracticing/Composite_DP/Smart-Pointers-usage-in-polymorphism/tests/smarttests/build/_deps/gtestlib-subbuild/CMakeFiles/gtestlib-populate.rule"
+		},
+		{
+			"file" : "D:/Source Codes/codePracticing/Composite_DP/Smart-Pointers-usage-in-polymorphism/tests/smarttests/build/_deps/gtestlib-subbuild/CMakeFiles/gtestlib-populate-complete.rule"
+		},
+		{
+			"file" : "D:/Source Codes/codePracticing/Composite_DP/Smart-Pointers-usage-in-polymorphism/tests/smarttests/build/_deps/gtestlib-subbuild/gtestlib-populate-prefix/src/gtestlib-populate-stamp/gtestlib-populate-build.rule"
+		},
+		{
+			"file" : "D:/Source Codes/codePracticing/Composite_DP/Smart-Pointers-usage-in-polymorphism/tests/smarttests/build/_deps/gtestlib-subbuild/gtestlib-populate-prefix/src/gtestlib-populate-stamp/gtestlib-populate-configure.rule"
+		},
+		{
+			"file" : "D:/Source Codes/codePracticing/Composite_DP/Smart-Pointers-usage-in-polymorphism/tests/smarttests/build/_deps/gtestlib-subbuild/gtestlib-populate-prefix/src/gtestlib-populate-stamp/gtestlib-populate-download.rule"
+		},
+		{
+			"file" : "D:/Source Codes/codePracticing/Composite_DP/Smart-Pointers-usage-in-polymorphism/tests/smarttests/build/_deps/gtestlib-subbuild/gtestlib-populate-prefix/src/gtestlib-populate-stamp/gtestlib-populate-install.rule"
+		},
+		{
+			"file" : "D:/Source Codes/codePracticing/Composite_DP/Smart-Pointers-usage-in-polymorphism/tests/smarttests/build/_deps/gtestlib-subbuild/gtestlib-populate-prefix/src/gtestlib-populate-stamp/gtestlib-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/Source Codes/codePracticing/Composite_DP/Smart-Pointers-usage-in-polymorphism/tests/smarttests/build/_deps/gtestlib-subbuild/gtestlib-populate-prefix/src/gtestlib-populate-stamp/gtestlib-populate-patch_disconnected.rule"
+		},
+		{
+			"file" : "D:/Source Codes/codePracticing/Composite_DP/Smart-Pointers-usage-in-polymorphism/tests/smarttests/build/_deps/gtestlib-subbuild/gtestlib-populate-prefix/src/gtestlib-populate-stamp/gtestlib-populate-test.rule"
+		},
+		{
+			"file" : "D:/Source Codes/codePracticing/Composite_DP/Smart-Pointers-usage-in-polymorphism/tests/smarttests/build/_deps/gtestlib-subbuild/gtestlib-populate-prefix/src/gtestlib-populate-stamp/gtestlib-populate-update_disconnected.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"gtestlib-populate"
+		],
+		"name" : "gtestlib-populate"
+	}
+}

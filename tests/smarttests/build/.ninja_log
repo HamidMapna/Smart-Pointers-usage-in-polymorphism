@@ -1,0 +1,16 @@
+# ninja log v5
+29	3235	7276230946364025	_deps/gtestlib-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	e0da1bfccba02d21
+13	3364	7276230947788066	CMakeFiles/smart_test.dir/general_tests.cpp.obj	6083456f8b298163
+18	6433	7276230978395647	_deps/gtestlib-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	272bc546693b4db4
+20	3245	7276230946520238	_deps/gtestlib-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	71f54b6e5d71b7e3
+14012	14472	7276231058780867	lib/libgtest.a	6bcdbcdd70e31a15
+26	14009	7276231053886545	_deps/gtestlib-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	cb0a0c798b395348
+14476	14834	7276231062355876	lib/libgtest_main.a	84c520156de49209
+15217	15732	7276231071180227	smart_test.exe	bd0c2a869b12c180
+14472	14863	7276231062758560	lib/libgmock.a	d42beda0a7c977b0
+14864	15217	7276231066257515	lib/libgmock_main.a	f10d00dc1c0f972f
+16	487	7276256930182603	CMakeFiles/smart_test.dir/D_/Source_Codes/codePracticing/Composite_DP/Smart-Pointers-usage-in-polymorphism/Composite.cpp.obj	fc757a0f14a09423
+10	2160	7276257093835031	CMakeFiles/smart_test.dir/general_tests.cpp.obj	b8ec70859a265f5
+2161	2648	7276257098549846	smart_test.exe	dd81af038876f798
+20	1959	7276257283242529	CMakeFiles/smart_test.dir/general_tests.cpp.obj	b8ec70859a265f5
+1960	2399	7276257287455523	smart_test.exe	dd81af038876f798
