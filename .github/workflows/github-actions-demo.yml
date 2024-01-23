@@ -25,13 +25,7 @@ jobs:
       - name: Create Folder
         run: mkdir -p test_results/
 
-      - name: Upload Test Results
-        uses: Actions/upload-artifact@v1
-        if: failure()        
-        with:          
-          name: test_results_xml
-          path: ${{runner.workspace}}/test_results/*.xml
-
+      
 
 
 
