@@ -6,3 +6,7 @@ set(CMAKE_CURRENT_SOURCE_DIR "../../")
 set(SRC general_tests.cpp ../../Composite.cpp)
 add_executable(${PROJECT_NAME} ${SRC})
 target_link_libraries(${PROJECT_NAME} gtest gmock gmock_main)
+
+enable_testing()
+include(GoogleTest)
+gtest_discover_tests(${PROJECT_NAME})
