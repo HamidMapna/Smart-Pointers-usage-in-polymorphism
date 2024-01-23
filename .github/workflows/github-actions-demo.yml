@@ -9,9 +9,8 @@ jobs:
     steps:
       - uses: Actions/checkout@v1
       - name: Configure CMake
-        run: 
-          echo "vars ${{runner.workspace}}"
-          cmake -S $GITHUB_WORKSPACE -B mybuild
+        run:           
+          cmake -S $GITHUB_WORKSPACE -B ${{runner.workspace}}/build
 
       - name: Build
         working-directory: ${{runner.workspace}}/build
