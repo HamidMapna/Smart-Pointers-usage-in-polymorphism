@@ -20,7 +20,7 @@ jobs:
         run: GTEST_OUTPUT=xml:test-results/ GTEST_COLOR=1 ctest -V
 
       - name: Upload Test Results
-        uses: Actions/upload-artifact@v
+        uses: Actions/upload-artifact@v1
         if: failure()
         with:
           name: test_results_xml
