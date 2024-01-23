@@ -10,7 +10,7 @@ jobs:
       - uses: Actions/checkout@v1
       - name: Configure CMake
         run:           
-          cmake -S $GITHUB_WORKSPACE -B ${{runner.workspace}}/build
+          cmake -S $GITHUB_WORKSPACE/tests/smarttests/ -B ${{runner.workspace}}/build
 
       - name: Build
         working-directory: ${{runner.workspace}}/build
