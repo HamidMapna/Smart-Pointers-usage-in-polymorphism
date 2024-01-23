@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: Actions/checkout@v1
       - name: Configure CMake
-        run: cmake -S $GITHUB_WORKSPACE -B ${runner.workspace}/build
+        run: cmake -S $GITHUB_WORKSPACE -B ${{runner.workspace}}/build
 
       - name: Build
         working-directory: ${{runner.workspace}}/build
