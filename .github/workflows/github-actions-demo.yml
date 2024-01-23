@@ -23,14 +23,14 @@ jobs:
           GTEST_OUTPUT=xml:test-results/ GTEST_COLOR=1 ctest -V
           mkdir -p test_results
       - name: Create Folder
-        run: mkdir -p ./tests/smarttests/test_results/
+        run: mkdir -p test_results/
 
       - name: Upload Test Results
         uses: Actions/upload-artifact@v1
         if: failure()        
         with:          
           name: test_results_xml
-          path: ${{runner.workspace}}/tests/smarttests/test_results/*.xml
+          path: ${{runner.workspace}}/test_results/*.xml
 
 
 
