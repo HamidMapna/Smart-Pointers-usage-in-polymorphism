@@ -27,7 +27,7 @@ jobs:
         if: failure()        
         with:          
           name: test_results_xml
-          path: ${{runner.workspace}}/*.xml
+          path: ${{runner.workspace}}/test.xml
 
 
 
