@@ -7,7 +7,7 @@ jobs:
       run:
         shell: bash
     steps:
-      - uses: Actions/checkout4@v4    
+      - uses: Actions/checkou4@v1
       - name: Configure CMake
         run: cmake -S $GITHUB_WORKSPACE -B ${{runner.workspace}}/build
 
