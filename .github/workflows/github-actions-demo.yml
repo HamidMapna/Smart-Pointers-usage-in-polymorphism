@@ -21,7 +21,12 @@ jobs:
         working-directory: ${{runner.workspace}}/build
         run: 
           GTEST_OUTPUT=xml:test-results/ GTEST_COLOR=1 ctest -V
-
+      - name: Copy Test Results
+        if: always()
+        run: |
+            cp -Lpr /tmp/test-results test-results
+        shell: bash
+        
       - name: Upload Test Results
         uses: EnricoMi/publish-unit-test-result-action@v2
         if: always()        
