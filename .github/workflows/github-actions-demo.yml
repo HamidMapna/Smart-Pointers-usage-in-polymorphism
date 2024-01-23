@@ -10,15 +10,15 @@ jobs:
       - uses: Actions/checkout@v1
       - name: Configure CMake
         run:           
-          cmake -S $GITHUB_WORKSPACE/tests/smarttests/ -B ${{runner.workspace}}/tests/smarttests/build
+          cmake -S $GITHUB_WORKSPACE/tests/smarttests/ -B ${{runner.workspace}}/build
 
       - name: Build
-        working-directory: ${{runner.workspace}}/tests/smarttests/build
+        working-directory: ${{runner.workspace}}/build
         run:           
           cmake --build .
 
       - name: Test
-        working-directory: ${{runner.workspace}}/tests/smarttests/build
+        working-directory: ${{runner.workspace}}/build
         run: GTEST_OUTPUT=xml:test-results/ GTEST_COLOR=1 ctest -V
 
       - name: Upload Test Results
@@ -26,7 +26,7 @@ jobs:
         if: failure()
         with:
           name: test_results_xml
-          path: ${{runner.workspace}}/build/*.xml
+          path: ${{runner.workspace}}tests/smarttests/test_results/**/*.xml
 
 
 
