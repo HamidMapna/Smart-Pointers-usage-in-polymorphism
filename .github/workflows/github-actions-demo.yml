@@ -21,7 +21,8 @@ jobs:
         working-directory: ${{runner.workspace}}/build
         run: 
           GTEST_OUTPUT=xml:test-results/ GTEST_COLOR=1 ctest -V
-
+          mkdir -p jest-junit.xml
+          
       - name: Upload Test Results
         uses: Actions/upload-artifact@v1
         if: failure()        
