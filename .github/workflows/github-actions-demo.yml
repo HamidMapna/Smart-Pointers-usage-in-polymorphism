@@ -8,6 +8,10 @@ jobs:
         shell: bash
     steps:
       - uses: Actions/checkout@v1
+      - name: Print workspace path
+        run:
+          echo "Runner Workspace path is ${{runner.workspace}}"
+          
       - name: Configure CMake
         run:           
           cmake -S $GITHUB_WORKSPACE/tests/smarttests/ -B ${{runner.workspace}}/build
