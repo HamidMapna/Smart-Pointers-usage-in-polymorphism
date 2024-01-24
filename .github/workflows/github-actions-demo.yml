@@ -29,11 +29,10 @@ jobs:
       
       - name: Upload Artifacts
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: Results
-          path: |
-            - ${{github.workspace}}/smarttests/*
+          name: Archive Results
+          path: smarttests/coverage.html
       
       - name: Publish Test Results
         uses: EnricoMi/publish-unit-test-result-action@v2
