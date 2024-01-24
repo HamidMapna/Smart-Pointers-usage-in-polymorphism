@@ -31,7 +31,9 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Archive shared objects
-          path: ${{runner.workspace}}/build/**/*.so
+          path: |
+             ${{runner.workspace}}/build/**/*.so
+             ${{runner.workspace}}/build/**/*.xml
 
       - name: Publish Test Results
         uses: EnricoMi/publish-unit-test-result-action@v2
