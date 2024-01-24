@@ -25,7 +25,7 @@ jobs:
       - name: Test
         working-directory: ${{runner.workspace}}/build
         run: 
-          GTEST_OUTPUT=xml:test-results/ GTEST_COLOR=1 ctest -V                
+          GTEST_OUTPUT=xml:${{runner.workspace}}/build/test-results GTEST_COLOR=1 ctest -V                
       - name: Upload Artifacts
         if: always()
         uses: actions/upload-artifact@v3
