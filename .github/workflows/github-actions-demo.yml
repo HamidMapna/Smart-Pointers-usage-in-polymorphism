@@ -31,5 +31,5 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Archive Results
-          path: ${{runner.workspace}}/build
+          path: ${{runner.workspace}}/build/**/libcomposite.so
     
