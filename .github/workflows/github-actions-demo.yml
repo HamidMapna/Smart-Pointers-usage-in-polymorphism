@@ -11,7 +11,8 @@ jobs:
       - name: Print workspace path
         run:
           echo "Runner Workspace path is ${{runner.workspace}}"
-          
+          echo "GITHUB_WORKSPACE path is $GITHUB_WORKSPACE"
+
       - name: Configure CMake
         run:           
           cmake -S $GITHUB_WORKSPACE/tests/smarttests/ -B ${{runner.workspace}}/build
