@@ -32,7 +32,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: Archive Results
-          path: smarttests/coverage.html
+          path: ./coverage.html
       
       - name: Publish Test Results
         uses: EnricoMi/publish-unit-test-result-action@v2
