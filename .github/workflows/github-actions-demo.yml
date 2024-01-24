@@ -30,6 +30,6 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v3
         with:
-          name: Archive Results
-          path: ${{runner.workspace}}/build/**/libcomposite.so
+          name: Archive shared objects
+          path: ${{runner.workspace}}/build/**/*.so
     
