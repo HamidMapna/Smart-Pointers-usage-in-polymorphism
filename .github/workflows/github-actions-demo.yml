@@ -6,7 +6,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ${{runner.workspace}}/build
+        working-directory: ./build
     steps:
       - uses: Actions/checkout@v1
       - name: Print workspace path
@@ -19,7 +19,7 @@ jobs:
           cmake -S $GITHUB_WORKSPACE/tests/smarttests/ -B ${{runner.workspace}}/build
 
       - name: Build
-        working-directory: ./build
+        working-directory: ${{runner.workspace}}/build
         run:           
           cmake --build .
 
