@@ -32,13 +32,13 @@ jobs:
         with:
           name: Archive shared objects
           path: ${{runner.workspace}}/build/**/*.so
-          
+
       - name: Publish Test Results
         uses: EnricoMi/publish-unit-test-result-action@v2
         if: always()
         with:
           files: |
-            test-results/**/*.xml
-            test-results/**/*.trx
-            test-results/**/*.json    
+            ${{runner.workspace}}/build/**/*.xml
+            ${{runner.workspace}}/build/**/*.trx
+            ${{runner.workspace}}/build/**/*.json    
     
