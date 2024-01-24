@@ -19,7 +19,7 @@ jobs:
           cmake -S $GITHUB_WORKSPACE/tests/smarttests/ -B ${{runner.workspace}}/build
 
       - name: Build
-        working-directory: ${{runner.workspace}}/build
+        working-directory: ./build
         run:           
           cmake --build .
 
