@@ -32,7 +32,8 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Results
-          path: build         
+          path: |
+            - ${{github.workspace}}/smarttests/*
       
       - name: Publish Test Results
         uses: EnricoMi/publish-unit-test-result-action@v2
