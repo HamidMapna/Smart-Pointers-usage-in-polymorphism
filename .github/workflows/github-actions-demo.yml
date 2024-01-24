@@ -26,21 +26,20 @@ jobs:
         working-directory: ${{runner.workspace}}/build
         run: 
           GTEST_OUTPUT=xml:test-results/ GTEST_COLOR=1 ctest -V          
-      
+      - name: create download temporary folder
+        run: mkdir downloads
+        
+      - name: add to downloads folder
+        run: |
+          cd downloads  
+          echo "hello" > alpha.html
+          echo "how are you" > beta.html
+          cd ..
+
       - name: Upload Artifacts
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: Archive Results
-          path: build/coverage.zip
-      
-      - name: Publish Test Results
-        uses: EnricoMi/publish-unit-test-result-action@v2
-        if: always()
-        with:
-          files: |
-            test-results/**/*.xml
-            test-results/**/*.trx
-            test-results/**/*.json
-
-
+          path: downloads
+    
