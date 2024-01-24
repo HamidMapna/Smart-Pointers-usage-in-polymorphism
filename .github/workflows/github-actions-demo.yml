@@ -43,7 +43,7 @@ jobs:
         if: always()
         with:
           files: |
-            /home/runner/work/Smart-Pointers-usage-in-polymorphism/build/*.xml
+            ${{runner.workspace}}/build/test-results.xml
             build/**/*.trx
             build/**/*.json    
     
