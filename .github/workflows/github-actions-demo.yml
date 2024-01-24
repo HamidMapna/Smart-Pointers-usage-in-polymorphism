@@ -25,15 +25,15 @@ jobs:
       - name: Test
         working-directory: ${{runner.workspace}}/build
         run: 
-          GTEST_OUTPUT=xml:test-results/ GTEST_COLOR=1 ctest -V
-          mkdir -p jest-junit.xml
+          GTEST_OUTPUT=xml:test-results/ GTEST_COLOR=1 ctest -V          
           
-      - name: Upload Test Results
-        uses: Actions/upload-artifact@v1
-        if: failure()        
-        with:          
-          name: test-results
-          path: jest-junit.xml
-
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v2
+        if: always()
+        with:
+          files: |
+            test-results/**/*.xml
+            test-results/**/*.trx
+            test-results/**/*.json
 
 
