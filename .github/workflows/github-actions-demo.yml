@@ -38,12 +38,17 @@ jobs:
              ${{runner.workspace}}/build/**/*.so
              ${{runner.workspace}}/build/**/*.xml
 
-      - name: Publish Test Results
-        uses: EnricoMi/publish-unit-test-result-action@v2
+  Publish:
+    name: Publish Test Results
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Actions/checkout@v1
+      - uses: EnricoMi/publish-unit-test-result-action@v2
         if: always()
         with:
           files: |
             ${{runner.workspace}}/build/test-results.xml
             build/**/*.trx
             build/**/*.json    
-    
+        
