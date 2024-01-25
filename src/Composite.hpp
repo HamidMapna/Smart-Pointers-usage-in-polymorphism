@@ -1,21 +1,24 @@
 #pragma once
 #include <memory>
-typedef int (*operation)(int, int);
+typedef double (*operation)(double, double);
 
-    int add(int a, int b);
-    int subtract(int a, int b);
+    double add(double a, double b);
+    double subtract(double a, double b);
+    double divide(double a, double b);
+    double multiply(double a, double b);
+
     
     class base_object{
         public:
-            virtual int evaluate() = 0;
+            virtual double evaluate() = 0;
             virtual ~base_object(){}
     };
     class primitive: public base_object{
         private:
-            int value;
+            double value;
         public:
-            primitive(int _value): value(_value){}          
-            int evaluate() override{
+            primitive(double _value): value(_value){}          
+            double evaluate() override{
                return value; 
             }
     };
@@ -28,5 +31,5 @@ typedef int (*operation)(int, int);
          composite() = delete;
          composite(std::shared_ptr<base_object> _left, std::shared_ptr<base_object> _right, operation _op);
          composite(base_object *_left, base_object *_right, operation _op);
-         int evaluate() override;
+         double evaluate() override;
     };
