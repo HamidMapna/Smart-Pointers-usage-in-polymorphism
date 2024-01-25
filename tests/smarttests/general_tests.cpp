@@ -15,7 +15,7 @@ TEST(GeneralTests, simpleTest){
     //ASSERT
     EXPECT_EQ(expected, actual);
 }
-/*
+
 TEST(GeneralTests, simpleTest2){
     //calculate (((3*2)+12)/(7-2)) = 3.6
     ///Arrange
@@ -35,4 +35,3 @@ TEST(GeneralTests, simpleTest2){
     //ASSERT
     EXPECT_EQ(expected, actual);
 }
-*/
