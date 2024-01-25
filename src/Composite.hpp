@@ -25,7 +25,8 @@ typedef double (*operation)(double, double);
     
     class composite: public base_object{
         private:
-            std::shared_ptr<base_object> left,right;
+            std::shared_ptr<base_object> left;
+            std::shared_ptr<base_object> right;
             operation op;
         public:
          composite() = delete;

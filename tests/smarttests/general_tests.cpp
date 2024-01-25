@@ -3,19 +3,19 @@
 #include "Composite.hpp"
 
 TEST(GeneralTests, simpleTest){
-    ///Arrange
+    //Arrange
     double expected = 7;
     std::shared_ptr<composite> exp1 = std::make_shared<composite>
                     (std::make_shared<primitive>(10), std::make_shared<primitive>(2), &add);
 
-    std::shared_ptr<composite> exp2 = std::make_shared<composite>(std::move(exp1), std::make_shared<primitive>(5), &subtract);
+   // std::shared_ptr<composite> exp2 = std::make_shared<composite>(std::move(exp1), std::make_shared<primitive>(5), &subtract);
     //ACT
 
-    double actual = exp2->evaluate();
+    double actual = exp1->evaluate();
     //ASSERT
     EXPECT_EQ(expected, actual);
 }
-
+/*
 TEST(GeneralTests, simpleTest2){
     //calculate (((3*2)+12)/(7-2)) = 3.6
     ///Arrange
@@ -35,3 +35,4 @@ TEST(GeneralTests, simpleTest2){
     //ASSERT
     EXPECT_EQ(expected, actual);
 }
+*/

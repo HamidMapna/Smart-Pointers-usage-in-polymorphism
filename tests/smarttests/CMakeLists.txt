@@ -1,4 +1,8 @@
 cmake_minimum_required(VERSION 3.10.1)
+
+set(CMAKE_C_COMPILE C:/msys64/ucrt64/bin/gcc.exe)
+set(CMAKE_CXX_COMPILER C:/msys64/ucrt64/bin/g++.exe)
+
 project(smart_test)
 add_subdirectory(../ testlibs)
 add_subdirectory(../../src composite)
