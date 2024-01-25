@@ -4,7 +4,7 @@
 
 TEST(GeneralTests1, simpleTest){
     //Arrange
-    double expected = 7;
+    double expected = 6;
     std::shared_ptr<composite> exp1 = std::make_shared<composite>
                     (std::make_shared<primitive>(10), std::make_shared<primitive>(2), &add);
 
