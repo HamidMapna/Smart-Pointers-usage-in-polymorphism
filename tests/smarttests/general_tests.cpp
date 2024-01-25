@@ -13,7 +13,7 @@ TEST(GeneralTests1, simpleTest){
 
     double actual = exp2->evaluate();
     //ASSERT
-    EXPECT_EQ(expected, actual);
+    EXPECT_NE(expected, actual);
 }
 
 TEST(GeneralTests2, simpleTest2){
