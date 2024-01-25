@@ -2,7 +2,7 @@
 #include <gmock/gmock.h>
 #include "Composite.hpp"
 
-TEST(GeneralTests, simpleTest){
+TEST(GeneralTests1, simpleTest){
     //Arrange
     double expected = 7;
     std::shared_ptr<composite> exp1 = std::make_shared<composite>
@@ -16,7 +16,7 @@ TEST(GeneralTests, simpleTest){
     EXPECT_EQ(expected, actual);
 }
 
-TEST(GeneralTests, simpleTest2){
+TEST(GeneralTests2, simpleTest2){
     //calculate (((3*2)+12)/(7-2)) = 3.6
     ///Arrange
     double expected = 3.6;
