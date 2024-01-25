@@ -48,7 +48,7 @@ jobs:
         if: always()
         with:
           files: |
-            build/**/*.xml
+            ${{runner.workspace}}/**/*.xml
             test-results/**/*.trx
             test-results/**/*.json
 
