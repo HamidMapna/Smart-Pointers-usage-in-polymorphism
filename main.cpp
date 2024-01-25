@@ -1,5 +1,9 @@
 #include <iostream>
+<<<<<<< HEAD
 //#include "src/Composite.hpp"
+=======
+#include "src/Composite.hpp"
+>>>>>>> a52f201155392cb7b92443d5c931413e5ad52c27
     
     int main(){//calculate expression ((10+2)-5)
        /* std::shared_ptr<composite> exp1 = std::make_shared<composite>
