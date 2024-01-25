@@ -23,7 +23,7 @@ TEST(GeneralTests, simpleTest2){
     std::shared_ptr<composite> exp1 = std::make_shared<composite>
                     (std::make_shared<primitive>(3), std::make_shared<primitive>(2), &multiply);
     std::shared_ptr<composite> exp2 = std::make_shared<composite>
-                (std::make_shared<composite>std::move(exp1), std::make_shared<primitive>(12), &add);                
+                (std::make_shared<composite>(std::move(exp1)), std::make_shared<primitive>(12), &add);                
 
     std::shared_ptr<composite> exp3 = std::make_shared<composite>
                 (std::make_shared<primitive>(7), std::make_shared<primitive>(2), &subtract);

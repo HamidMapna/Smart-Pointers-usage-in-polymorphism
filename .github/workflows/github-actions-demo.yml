@@ -52,17 +52,17 @@ jobs:
             test-results/**/*.trx
             test-results/**/*.json
 
-  Publish:
-    name: Publish Test Results
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Actions/checkout@v1
-      - uses: EnricoMi/publish-unit-test-result-action@v2
-        if: always()
-        with:
-          files: |
-            ${{runner.workspace}}/build/test-results.xml
-            build/**/*.trx
-            build/**/*.json    
+  # Publish:
+  #   name: Publish Test Results
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: Actions/checkout@v1
+  #     - uses: EnricoMi/publish-unit-test-result-action@v2
+  #       if: always()
+  #       with:
+  #         files: |
+  #           ${{runner.workspace}}/build/test-results.xml
+  #           build/**/*.trx
+  #           build/**/*.json    
         
